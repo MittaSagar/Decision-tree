@@ -1,0 +1,12 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Money_spent_lots <= 0.5\nentropy = 0.985\nsamples = 7\nvalue = [4, 3]"] ;
+1 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Eloquence_low <= 0.5\nentropy = 0.722\nsamples = 5\nvalue = [4, 1]"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="entropy = 0.0\nsamples = 4\nvalue = [4, 0]"] ;
+2 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]"] ;
+2 -> 4 ;
+}
